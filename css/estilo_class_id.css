@@ -1,0 +1,34 @@
+body {
+    background-color: blueviolet;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    border: 2px seashell;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#titulo {
+    text-align: center;
+    font-family:"Comic Sans MS";
+    font-size: 2em;
+    color: aqua;
+}
+
+.subtitulo {
+    font-family: tahoma;
+    font-size: 1.8em;
+    color: #d3e95a;
+}
+.link:hover {
+    color: #d3f126;
+}
+
+#cidade-londres{
+    width: 60%;
+    border: 2px solid #c
+}
