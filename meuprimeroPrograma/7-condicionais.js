@@ -1,5 +1,5 @@
-console.log(`Trabalhando com listas`);
-console.log(`Trabalhando com listas`);
+console.log(`Trabalhando com condicionais`);
+console.log(`Trabalhando com condicionais`);
 const salvador = `Salvador`;
 const saoPaulo = `São Paulo`;
 const rioDeJaneiro = `Rio de Janeiro`;
@@ -15,18 +15,9 @@ const estaAcompanhada = false;
 const temPassagemComprada = true;
 
 console.log("Destinos possíveis");
-// console.log(salvador, saoPaulo, rioDeJaneiro);
 console.log(listaDeDestinos);
 
-// if(idadeComrador >= 18){
-//     console.log("Comprador maior de idade");
-//     listaDeDestinos.splice( 1,1); //removendo item 
-// }else if (estaAcompanhada == true){
-//         console.log("Comprador está acompanhado");
-//         listaDeDestinos.splice( 1,1); //removendo item 
-// } else {
-//         console.log("Não é maior de idade e não vender");    
-// }
+
 
 console.log(listaDeDestinos);
 
