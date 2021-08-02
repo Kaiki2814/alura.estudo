@@ -1,18 +1,29 @@
-export class contaCorrente{
+export class ContaCorrente{
     agencia;
-    saldo;
+    cliente;
 
+     // #saldo =0 https://github.com/tc39/proposal-class-fields#private-fields
+    _saldo = 0;
+    
     sacar(valor){
-        if (this.saldo >= valorSacado){
-            this.saldo -= valorSacado;
+        if(this._saldo >= valor){
+            this._saldo -= valor;
             return valor;
-        } 
+        }
     }
+
     depositar(valor){
-        if(valor > 0 )
+        if(valor <= 0)
         {
             return;
-        }
-        this.saldo += valor;
+        } 
+        this._saldo += valor;           
+    }
+
+    tranferir(valor, conta){
+        
+        const valorSacado = this.sacar(valor);
+        conta.depositar(valorSacado);
+        
     }
 }
