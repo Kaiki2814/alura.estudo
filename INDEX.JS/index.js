@@ -15,5 +15,3 @@ let valor = 200;
 contaCorrenteRicardo.tranferir(valor, conta2);
 
 console.log(contaCorrenteRicardo);
-
-
