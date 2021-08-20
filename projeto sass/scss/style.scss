@@ -234,11 +234,30 @@ $layout-margin-size: 10px;
         &__title{
             background-color: $yellow;
             text-align: center;
+            padding: 10px 20px;
+            margin: 0;
+            letter-spacing: 1.5px;
         }
+
+        &__post{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        &__list{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 15px 0;
+            &:not(last-child) {
+                border-bottom: 1px dashed $light-grey;
+            }
+        }
+
+
     }
-
-    
-
 }
 
 .about {
