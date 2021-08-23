@@ -51,6 +51,30 @@ $layout-margin-size: 10px;
     %half-margin-#{$direction} {margin-#{$direction}: $layout-margin-size / 2;}
 }
 
+@import 'header', 'footer', 'about', 'article' ;
+
+/* Este trecho de estilo se refere 
+ao rodapé do nosso blog*/
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    // Este trecho de estilo posiciona o footer na parte de baixo da nossa tela
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__logo {
+        max-width: 100px;
+    }
+
+    &__txt {
+        margin: auto;
+        @include fontSize(14px);
+    }
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -256,7 +280,6 @@ $layout-margin-size: 10px;
             }
         }
 
-
     }
 }
 
@@ -282,61 +305,3 @@ $layout-margin-size: 10px;
     }  
 }
   
-.breadcrumb{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &__link{
-            font-size: 12px;
-            text-decoration: none;
-            color: $dark-grey;
-            &:hover{
-                text-decoration: underline;
-                color: $purple;
-            }
-        }
-
-        &__img{
-            width: 10px;
-            margin: 8px;
-        }
-
-        &__img{
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        &__intro{
-            font-weight: 100;
-            color: $dark-grey;
-            width: 70%;
-            margin: 30px auto;
-            text-align: center;
-            font-size: 16px;
-        }
-
-        &__split{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        &__img-description{
-          width: $img-width;
-        }
-
-        &__txt{
-            width: calc(100% - $img-width);
-        }
-
-        &__p{
-            font-size: 14px;
-            padding: 10px 20px;
-            color: $dark-grey;
-        }
-    }
-
-
-
