@@ -18,7 +18,7 @@
 }
 
 .texto-cor-especial {
-    background-color: darkred;
+    background-color: darkred !important;
 }
 
 .botao-cor-especial {
